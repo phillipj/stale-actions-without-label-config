@@ -7,7 +7,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/stale@v3
+    - uses: phillipj/close-stale@v4-poc
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-close: 1
